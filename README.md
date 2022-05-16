@@ -15,4 +15,4 @@ Keys;
 
 ### Run microservices
 
-<pre> $ sbt docker </pre>
+<pre> $ sbt docker run </pre>
