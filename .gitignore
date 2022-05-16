@@ -1,0 +1,12 @@
+.*
+# except for .gitignore and .travis_scripts
+!.gitignore
+!.scalafmt.conf
+
+logs
+target
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID

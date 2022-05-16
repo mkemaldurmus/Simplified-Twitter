@@ -25,22 +25,20 @@ val akkaHttp = "10.1.1"
 val akka = "2.5.11"
 val circe = "0.9.3"
 val macwire = "2.3.0"
+val akkaHttpCirce = "1.20.1"
+val lockBack = "1.2.3"
+val mongoScala = "2.1.0"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http" % akkaHttp,
   "com.typesafe.akka" %% "akka-stream" % akka,
   "com.typesafe.akka" %% "akka-slf4j" % akka,
-
-  "de.heikoseeberger" %% "akka-http-circe" % "1.20.1",
-
+  "de.heikoseeberger" %% "akka-http-circe" %akkaHttpCirce ,
   "io.circe" %% "circe-generic" % circe,
-
   "com.softwaremill.macwire" %% "macros" % macwire,
   "com.softwaremill.macwire" %% "util" % macwire,
-
-  "ch.qos.logback" % "logback-classic" % "1.2.3",
-
-  "org.mongodb.scala" %% "mongo-scala-driver" % "2.1.0",
+  "ch.qos.logback" % "logback-classic" % lockBack,
+  "org.mongodb.scala" %% "mongo-scala-driver" % mongoScala,
 
   //test libraries
   "org.scalatest" %% "scalatest" % "3.0.1" % "test",
